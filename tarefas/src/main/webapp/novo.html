@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Agenda de tarefas</title>
+<link rel="icon" href="imagens/Logo.png">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+	<div class="box">
+		<h1>Criar nova tarefa</h1>
+		<form name="frmTarefa" action="insert">
+			<table>
+				<tr>
+					<td><input type="text" name="nome"
+						placeholder="Nome da tarefa" class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="prioridade"
+						placeholder="Insira a prioridade" class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="dataRegistro"
+						placeholder="Data de registro" class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="dataConclusao"
+						placeholder="Data de conclusão" class="Caixa1"></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="descricao"
+						placeholder="Descrição da tarefa" class="Caixa1"></td>
+				</tr>
+			</table>
+			<input type="button" value="Criar" class="Botao0" onclick="validar()">
+		</form>
+	</div>
+
+	<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+		
+	</script>
+	<script>
+		(function() {
+			window.onload = function() {
+				new BlipChat()
+						.withAppKey(
+								'dG9ydHVndWl0YTo1MmFhZjEzYy1kOTcyLTQ3ZmEtODE2ZS03YWMzNmE1MjhkNDg=')
+						.withButton({
+							"color" : "#2CC3D5",
+							"icon" : ""
+						}).withCustomCommonUrl(
+								'https://projeto-lip-et96s.chat.blip.ai/')
+						.build();
+			}
+		})();
+	</script>
+
+	<script src="scripts/validador.js"></script>
+</body>
+</html>
